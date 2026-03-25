@@ -76,7 +76,6 @@ function Particles() {
   return <canvas ref={ref} style={{ position: "fixed", inset: 0, zIndex: 0, pointerEvents: "none", opacity: .65 }} />;
 }
 
-/* ── SKILLS with devicon logos ── */
 const SKILLS = [
   {
     cat: "Languages", color: "#f59e0b",
@@ -125,7 +124,6 @@ const SKILLS = [
   },
 ];
 
-/* ── PROJECTS (6) with images ── */
 const PROJECTS = [
   {
     title: "PixGram", sub: "Instagram Clone",
@@ -177,7 +175,6 @@ const PROJECTS = [
   },
 ];
 
-/* ── SECTION LABEL ── */
 function SLabel({ children }) {
   return (
     <div style={{ display: "inline-flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
@@ -212,16 +209,11 @@ function Navbar() {
             onMouseLeave={e => { e.target.style.color = "rgba(255,255,255,.62)"; e.target.style.background = "none"; }}
           >{l}</button>
         ))}
-        {/* <a href="mailto:amitsgupta18@gmail.com" style={{ marginLeft: 10, background: "linear-gradient(135deg,#2b6cb0,#6d28d9)", color: "#fff", padding: "9px 20px", borderRadius: 10, fontSize: 13, fontWeight: 700, textDecoration: "none", fontFamily: "'DM Sans',sans-serif", boxShadow: "0 4px 20px rgba(109,40,217,.32)", transition: "all .2s", display: "inline-block" }}
-          onMouseEnter={e => { e.target.style.opacity = ".88"; e.target.style.transform = "translateY(-1px)"; }}
-          onMouseLeave={e => { e.target.style.opacity = "1"; e.target.style.transform = "translateY(0)"; }}
-        >Hire Me ✦</a> */}
       </div>
     </nav>
   );
 }
 
-/* ── HERO (SPLIT LAYOUT WITH PHOTO) ── */
 function Hero() {
   const typed = useTyping(["Full Stack Developer", "MERN Stack Engineer", "Django Developer", "Problem Solver"]);
   const go = id => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -298,21 +290,11 @@ function Hero() {
             ))}
           </div>
         </div>
-
-        {/* RIGHT — Photo */}
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", animation: "fadeUp .6s .3s ease both" }}>
           <div style={{ position: "relative" }}>
-            {/* Rotating gradient ring */}
             <div style={{ position: "absolute", inset: -3, borderRadius: 32, background: "linear-gradient(135deg,#63b3ed,#a78bfa,#f472b6,#63b3ed)", backgroundSize: "300% 300%", animation: "gradRing 4s linear infinite", zIndex: 0 }} />
 
-            {/* Photo container */}
             <div style={{ width: 340, height: 380, borderRadius: 30, overflow: "hidden", position: "relative", zIndex: 1, background: "linear-gradient(160deg,rgba(49,130,206,.18),rgba(109,40,217,.12))", border: "none", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 12 }}>
-              {/* Placeholder for photo — replace <img> tag with your actual photo */}
-              {/* 
-                TO ADD YOUR PHOTO:
-                Replace the div below with: <img src="/your-photo.jpg" alt="Amit Gupta" style={{width:"100%",height:"100%",objectFit:"cover"}} />
-                Place your photo in the /public folder of your React project
-              */}
               <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 16 }}>
                 <div style={{ width: 110, height: 110, borderRadius: "50%", background: "linear-gradient(135deg,rgba(99,179,237,.3),rgba(167,139,250,.3))", border: "2px dashed rgba(99,179,237,.4)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                   <svg width="48" height="48" viewBox="0 0 24 24" fill="rgba(99,179,237,0.6)"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" /></svg>
@@ -323,13 +305,10 @@ function Hero() {
                 </div>
               </div>
             </div>
-
-            {/* Floating info cards */}
           </div>
         </div>
       </div>
 
-      {/* Scroll indicator */}
       <div style={{ position: "absolute", bottom: 28, left: "50%", transform: "translateX(-50%)", display: "flex", flexDirection: "column", alignItems: "center", gap: 7, color: "rgba(255,255,255,.18)", fontSize: 10, fontFamily: "'DM Sans',sans-serif", letterSpacing: ".15em", textTransform: "uppercase", zIndex: 2 }}>
         scroll
         <div style={{ width: 1, height: 38, background: "linear-gradient(to bottom,rgba(99,179,237,.5),transparent)", animation: "scrollPulse 2.2s ease-in-out infinite" }} />
@@ -355,12 +334,7 @@ function About() {
               <div style={{ position: "relative", display: "inline-block" }}>
                 <div style={{ position: "absolute", inset: -3, borderRadius: 30, background: "linear-gradient(135deg,#63b3ed,#a78bfa,#f472b6,#63b3ed)", backgroundSize: "300% 300%", animation: "gradRing 4s linear infinite", zIndex: 0 }} />
                 <div style={{ width: 240, height: 270, borderRadius: 28, overflow: "hidden", position: "relative", zIndex: 1, background: "linear-gradient(160deg,rgba(49,130,206,.18),rgba(109,40,217,.12))", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 10 }}>
-                  {/*
-                    ADD YOUR PHOTO:
-                    1. Put your photo in /public/photo.jpg
-                    2. Replace this div with:
-                    <img src="/photo.jpg" alt="Amit Gupta" style={{width:"100%",height:"100%",objectFit:"cover",objectPosition:"top"}} />
-                  */}
+                  
                    <img src="/photo.jpeg" alt="Amit Gupta" style={{width:"100%",height:"100%",objectFit:"cover",objectPosition:"top"}} />
                   <span style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 11, color: "rgba(99,179,237,.5)", fontWeight: 500 }}>Add photo.jpg to /public</span>
                 </div>
