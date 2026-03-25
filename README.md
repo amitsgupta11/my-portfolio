@@ -18,49 +18,4 @@ A modern, responsive, and premium portfolio website built with React.js showcasi
 🎓 Education & Certifications — Clean timeline-style section
 
 
-🛠️ Tech Stack
-TechnologyUsageReact.jsFrontend FrameworkViteBuild ToolCSS-in-JSInline Styles + Global CSSCanvas APIParticle Background AnimationDevicons CDNSkill Technology IconsUnsplashProject Banner ImagesVercelDeployment
 
-📁 Project Structure
-my-portfolio/
-├── public/
-│   ├── photo.jpg          # Your profile photo
-│   └── AmitResume.pdf     # Your resume (for download)
-├── src/
-│   ├── App.jsx            # Main portfolio component (all sections)
-│   └── main.jsx           # React entry point
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
-
-🚀 Getting Started
-Prerequisites
-
-Node.js v18+
-npm or yarn
-
-Installation
-bash# 1. Clone the repository
-git clone https://github.com/amitsgupta11/my-portfolio.git
-
-# 2. Navigate into the project
-cd my-portfolio
-
-# 3. Install dependencies
-npm install
-
-# 4. Start development server
-npm run dev
-Open http://localhost:5173 in your browser.
-Build for Production
-bashnpm run build
-
-📦 Deployment (Vercel)
-Vercel Dashboard (Recommended)
-
-Push code to GitHub
-Go to vercel.com → Add New Project
-Import your GitHub repo
-Framework will auto-detect as Vite
-Click Deploy ✅
