@@ -1,16 +1,65 @@
-# React + Vite
+🚀 Amit Gupta — Developer Portfolio
+A modern, responsive, and premium portfolio website built with React.js showcasing my skills, projects, and experience as a Full Stack Developer.
+🔗 Live Demo: [amitgupta.vercel.app](https://my-portfolio-psi-one-xn34t9jtzj.vercel.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
 
-Currently, two official plugins are available:
+⚡ Blazing Fast — Built with Vite + React
+🌙 Dark Theme — Premium dark UI with blue/purple gradients
+🎯 Animated Typing Effect — Dynamic role switcher in hero
+🌐 Particle Background — Interactive canvas particle animation
+📱 Fully Responsive — Works on mobile, tablet, and desktop
+🎨 Glassmorphism UI — Modern card-based design with blur effects
+🔄 Scroll Animations — Sections animate on scroll using IntersectionObserver
+🖼️ Project Image Cards — Each project has a banner image + View Project button
+🛠️ Skill Icons — Tech stack displayed with official Devicon logos
+📬 Contact Form — Opens mail client directly with pre-filled content
+🎓 Education & Certifications — Clean timeline-style section
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+🛠️ Tech Stack
+TechnologyUsageReact.jsFrontend FrameworkViteBuild ToolCSS-in-JSInline Styles + Global CSSCanvas APIParticle Background AnimationDevicons CDNSkill Technology IconsUnsplashProject Banner ImagesVercelDeployment
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📁 Project Structure
+my-portfolio/
+├── public/
+│   ├── photo.jpg          # Your profile photo
+│   └── AmitResume.pdf     # Your resume (for download)
+├── src/
+│   ├── App.jsx            # Main portfolio component (all sections)
+│   └── main.jsx           # React entry point
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
 
-## Expanding the ESLint configuration
+🚀 Getting Started
+Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Node.js v18+
+npm or yarn
+
+Installation
+bash# 1. Clone the repository
+git clone https://github.com/amitsgupta11/my-portfolio.git
+
+# 2. Navigate into the project
+cd my-portfolio
+
+# 3. Install dependencies
+npm install
+
+# 4. Start development server
+npm run dev
+Open http://localhost:5173 in your browser.
+Build for Production
+bashnpm run build
+
+📦 Deployment (Vercel)
+Vercel Dashboard (Recommended)
+
+Push code to GitHub
+Go to vercel.com → Add New Project
+Import your GitHub repo
+Framework will auto-detect as Vite
+Click Deploy ✅
